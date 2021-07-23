@@ -14,3 +14,6 @@ git clone https://github.com/seungyup26/minulazer
 
 ## How to Run on Linux
 > **Run program with Wine or Mono**
+
+# Readme
+> You May not Use This Program for Illegal or Unethical Purposes
