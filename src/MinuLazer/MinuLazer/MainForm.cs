@@ -7,12 +7,12 @@ using System.Windows.Forms;
 
 namespace MinuLazer
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         Point position;
         bool move;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
 

@@ -1,7 +1,7 @@
 ﻿
 namespace MinuLazer
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -196,7 +196,7 @@ namespace MinuLazer
             this.githubPage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.githubPage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.githubPage_LinkClicked);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -209,7 +209,7 @@ namespace MinuLazer
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
