@@ -16,5 +16,5 @@ git clone https://github.com/seungyup26/minulazer
 > **Run program with Wine or Mono**
 
 # Readme
-> You May not Use This Program for Illegal or Unethical Purposes
-> Secondary Modifications are Fine. But Add LICENSE file or My Name (SeungYup26).
+1. You May not Use This Program for Illegal or Unethical Purposes <br>
+2. Secondary Modifications are Fine. But Add LICENSE file or My Name (SeungYup26). <br>
