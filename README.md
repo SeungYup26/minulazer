@@ -13,4 +13,4 @@ git clone https://github.com/seungyup26/minulazer
 ```
 
 ## How to Run on Linux
-> Run program with Mono or Wine.
+> **Run program with Mono or Wine.**
