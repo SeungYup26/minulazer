@@ -76,7 +76,7 @@ namespace MinuLazer
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 9);
+            this.label1.Location = new System.Drawing.Point(3, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 33);
             this.label1.TabIndex = 2;
@@ -132,9 +132,9 @@ namespace MinuLazer
             this.groupBox1.Controls.Add(this.ipBox);
             this.groupBox1.Controls.Add(this.portBox);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(15, 47);
+            this.groupBox1.Location = new System.Drawing.Point(12, 45);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(379, 53);
+            this.groupBox1.Size = new System.Drawing.Size(377, 53);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "IP Port";
@@ -154,7 +154,7 @@ namespace MinuLazer
             this.groupBox2.Controls.Add(this.threadBox);
             this.groupBox2.Controls.Add(this.packetBox);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(15, 106);
+            this.groupBox2.Location = new System.Drawing.Point(12, 104);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(379, 53);
             this.groupBox2.TabIndex = 7;
@@ -175,7 +175,7 @@ namespace MinuLazer
             this.groupBox3.Controls.Add(this.methodBox);
             this.groupBox3.Controls.Add(this.attackButton);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(15, 165);
+            this.groupBox3.Location = new System.Drawing.Point(12, 163);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(379, 89);
             this.groupBox3.TabIndex = 8;
@@ -201,7 +201,7 @@ namespace MinuLazer
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(407, 280);
+            this.ClientSize = new System.Drawing.Size(401, 280);
             this.Controls.Add(this.githubPage);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
