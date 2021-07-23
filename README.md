@@ -16,8 +16,5 @@ git clone https://github.com/seungyup26/minulazer
 > **Run program with Wine or Mono**
 
 # Readme
-1. This program was made for education. <br>
-2. You May not Use This Program for Illegal or Unethical Purposes <br>
-3. Secondary Modifications are Fine. But Add LICENSE file or My Name (SeungYup26). <br>
-
+1. This program was made for education <br>
 Other: <a href="https://github.com/SeungYup26/minulazer/wiki/Readme">Goto</a>
