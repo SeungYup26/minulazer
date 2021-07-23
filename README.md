@@ -17,3 +17,4 @@ git clone https://github.com/seungyup26/minulazer
 
 # Readme
 > You May not Use This Program for Illegal or Unethical Purposes
+> Secondary Modifications are Fine. But Add LICENSE file or My Name (SeungYup26).
