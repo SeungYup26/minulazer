@@ -65,7 +65,7 @@ namespace MinuLazer
             this.ipBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ipBox.Cursor = System.Windows.Forms.Cursors.Help;
             this.ipBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.ipBox.Location = new System.Drawing.Point(16, 19);
+            this.ipBox.Location = new System.Drawing.Point(16, 20);
             this.ipBox.Name = "ipBox";
             this.ipBox.Size = new System.Drawing.Size(206, 20);
             this.ipBox.TabIndex = 0;
@@ -77,7 +77,7 @@ namespace MinuLazer
             this.attackButton.FlatAppearance.BorderSize = 0;
             this.attackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.attackButton.ForeColor = System.Drawing.Color.Black;
-            this.attackButton.Location = new System.Drawing.Point(16, 46);
+            this.attackButton.Location = new System.Drawing.Point(16, 47);
             this.attackButton.Name = "attackButton";
             this.attackButton.Size = new System.Drawing.Size(137, 30);
             this.attackButton.TabIndex = 5;
@@ -100,7 +100,7 @@ namespace MinuLazer
             this.portBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.portBox.Cursor = System.Windows.Forms.Cursors.Help;
             this.portBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.portBox.Location = new System.Drawing.Point(243, 19);
+            this.portBox.Location = new System.Drawing.Point(243, 20);
             this.portBox.Name = "portBox";
             this.portBox.Size = new System.Drawing.Size(49, 20);
             this.portBox.TabIndex = 1;
@@ -111,7 +111,7 @@ namespace MinuLazer
             this.threadBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.threadBox.Cursor = System.Windows.Forms.Cursors.Help;
             this.threadBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.threadBox.Location = new System.Drawing.Point(16, 19);
+            this.threadBox.Location = new System.Drawing.Point(16, 20);
             this.threadBox.Name = "threadBox";
             this.threadBox.Size = new System.Drawing.Size(53, 20);
             this.threadBox.TabIndex = 1;
@@ -122,7 +122,8 @@ namespace MinuLazer
             this.packetBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.packetBox.Cursor = System.Windows.Forms.Cursors.Help;
             this.packetBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.packetBox.Location = new System.Drawing.Point(89, 19);
+            this.packetBox.Location = new System.Drawing.Point(89, 20);
+            this.packetBox.Multiline = true;
             this.packetBox.Name = "packetBox";
             this.packetBox.Size = new System.Drawing.Size(203, 20);
             this.packetBox.TabIndex = 3;
@@ -134,7 +135,7 @@ namespace MinuLazer
             this.methodBox.Items.AddRange(new object[] {
             "UDP",
             "TCP"});
-            this.methodBox.Location = new System.Drawing.Point(16, 19);
+            this.methodBox.Location = new System.Drawing.Point(16, 20);
             this.methodBox.Name = "methodBox";
             this.methodBox.Size = new System.Drawing.Size(276, 21);
             this.methodBox.TabIndex = 4;
@@ -155,7 +156,7 @@ namespace MinuLazer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(228, 23);
+            this.label2.Location = new System.Drawing.Point(228, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(9, 13);
             this.label2.TabIndex = 4;
@@ -177,7 +178,7 @@ namespace MinuLazer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(75, 23);
+            this.label3.Location = new System.Drawing.Point(75, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(9, 13);
             this.label3.TabIndex = 5;
@@ -203,7 +204,7 @@ namespace MinuLazer
             this.stopButton.FlatAppearance.BorderSize = 0;
             this.stopButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stopButton.ForeColor = System.Drawing.Color.Black;
-            this.stopButton.Location = new System.Drawing.Point(155, 46);
+            this.stopButton.Location = new System.Drawing.Point(155, 47);
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(137, 30);
             this.stopButton.TabIndex = 6;
@@ -270,7 +271,7 @@ namespace MinuLazer
             // 
             this.closeButton.FlatAppearance.BorderSize = 0;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeButton.Location = new System.Drawing.Point(318, 5);
+            this.closeButton.Location = new System.Drawing.Point(333, 1);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(25, 23);
             this.closeButton.TabIndex = 10;
@@ -308,7 +309,7 @@ namespace MinuLazer
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(323, 226);
+            this.tabPage2.Size = new System.Drawing.Size(324, 226);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Log";
             // 
