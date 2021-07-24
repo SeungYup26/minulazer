@@ -12,6 +12,9 @@ namespace MinuLazer
         Point position;
         bool move;
 
+        MinuFlood lazer = new MinuFlood();
+        Method methods = new Method();
+
         public MainForm()
         {
             InitializeComponent();
@@ -24,11 +27,14 @@ namespace MinuLazer
 
         private void attackButton_Click(object sender, EventArgs e)
         {
-            attackButton.Enabled = false;
-            MinuFlood lazer = new MinuFlood();
-            Method methods = new Method();
+            logBox.Text += Environment.NewLine + "Attack Start";
+            stateLogBox.Text = "Shooting to " + ipBox.Text + ":" + portBox.Text;
 
-            for (int i = 0; i < Int32.Parse(threadBox.Text); i++)
+            closeButton.Enabled = false;
+            attackButton.Enabled = false;
+            stopButton.Enabled = true;
+
+            for (int i = 0; i < (Int32.Parse(threadBox.Text) + 1); i++)
             {
                 if (methodBox.Text == "UDP" || methodBox.Text == "udp")
                 {
@@ -44,17 +50,37 @@ namespace MinuLazer
                     );
                     attack.Start();
                 }
+                threadLogBox.Text = "Thread: " + i.ToString();
             }
+        }
+
+        private void stopButton_Click(object sender, EventArgs e)
+        {
+            logBox.Text += Environment.NewLine + "Attack Stop";
+            stateLogBox.Text = "Ready";
+            threadLogBox.Text = "Thread: 0";
+
+            closeButton.Enabled = true;
+            attackButton.Enabled = true;
+            stopButton.Enabled = false;
+
+            lazer.Stop();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
+            lazer.Stop();
             Application.Exit();
         }
 
         private void githubPage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/seungyup26/minulazer");
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
