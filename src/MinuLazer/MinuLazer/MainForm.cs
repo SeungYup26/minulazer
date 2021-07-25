@@ -30,7 +30,6 @@ namespace MinuLazer
             logBox.Text += Environment.NewLine + "Attack Start";
             stateLogBox.Text = "Shooting to " + ipBox.Text + ":" + portBox.Text;
 
-            closeButton.Enabled = false;
             attackButton.Enabled = false;
             stopButton.Enabled = true;
 
@@ -60,22 +59,25 @@ namespace MinuLazer
             stateLogBox.Text = "Ready";
             threadLogBox.Text = "Thread: 0";
 
-            closeButton.Enabled = true;
             attackButton.Enabled = true;
             stopButton.Enabled = false;
 
             lazer.Stop();
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
-        {
-            lazer.Stop();
-            Application.Exit();
-        }
-
         private void githubPage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/seungyup26/minulazer");
+        }
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/seungyup26/minulazer");
+
+        }
+
+        private void minimizeButton_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
