@@ -327,7 +327,7 @@ namespace MinuLazer
             this.closeButton.FlatAppearance.BorderSize = 0;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(635, 4);
+            this.closeButton.Location = new System.Drawing.Point(629, 6);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(17, 17);
             this.closeButton.TabIndex = 3;
@@ -341,7 +341,7 @@ namespace MinuLazer
             this.minimizeButton.FlatAppearance.BorderSize = 0;
             this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.minimizeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimizeButton.Location = new System.Drawing.Point(616, 4);
+            this.minimizeButton.Location = new System.Drawing.Point(610, 6);
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.Size = new System.Drawing.Size(17, 17);
             this.minimizeButton.TabIndex = 18;
