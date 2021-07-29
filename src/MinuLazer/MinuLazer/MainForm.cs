@@ -27,7 +27,7 @@ namespace MinuLazer
 
         private void attackButton_Click(object sender, EventArgs e)
         {
-            logBox.Text += Environment.NewLine + "Attack Start";
+            logBox.Text += Environment.NewLine + "[*] Attack Start";
             stateLogBox.Text = "Shooting to " + ipBox.Text + ":" + portBox.Text;
 
             attackButton.Enabled = false;
@@ -55,7 +55,7 @@ namespace MinuLazer
 
         private void stopButton_Click(object sender, EventArgs e)
         {
-            logBox.Text += Environment.NewLine + "Attack Stop";
+            logBox.Text += Environment.NewLine + "[*] Attack Stop";
             stateLogBox.Text = "Ready";
             threadLogBox.Text = "Thread: 0";
 
