@@ -50,7 +50,6 @@ namespace MinuLazer
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -312,15 +311,6 @@ namespace MinuLazer
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(0, 312);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(652, 5);
-            this.panel10.TabIndex = 17;
-            // 
             // closeButton
             // 
             this.closeButton.BackColor = System.Drawing.Color.Black;
@@ -366,7 +356,6 @@ namespace MinuLazer
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(652, 317);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.panel10);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.minimizeButton);
             this.Controls.Add(this.tabControl1);
@@ -414,7 +403,6 @@ namespace MinuLazer
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox threadLogBox;
         private System.Windows.Forms.Button stopButton;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.Button minimizeButton;
