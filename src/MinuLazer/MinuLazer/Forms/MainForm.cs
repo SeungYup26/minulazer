@@ -4,8 +4,9 @@ using System.Drawing;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using MinuLazer.Functions;
 
-namespace MinuLazer
+namespace MinuLazer.Forms
 {
     public partial class MainForm : Form
     {

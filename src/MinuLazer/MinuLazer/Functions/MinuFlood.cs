@@ -4,7 +4,7 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace MinuLazer
+namespace MinuLazer.Functions
 {
     public class MinuFlood
     {

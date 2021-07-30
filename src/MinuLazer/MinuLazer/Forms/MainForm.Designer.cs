@@ -1,5 +1,5 @@
 ﻿
-namespace MinuLazer
+namespace MinuLazer.Forms
 {
     partial class MainForm
     {
@@ -265,7 +265,7 @@ namespace MinuLazer
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.ItemSize = new System.Drawing.Size(42, 18);
-            this.tabControl1.Location = new System.Drawing.Point(2, 27);
+            this.tabControl1.Location = new System.Drawing.Point(5, 26);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(650, 290);
@@ -317,7 +317,7 @@ namespace MinuLazer
             this.closeButton.FlatAppearance.BorderSize = 0;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(629, 6);
+            this.closeButton.Location = new System.Drawing.Point(637, 6);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(17, 17);
             this.closeButton.TabIndex = 3;
@@ -331,7 +331,7 @@ namespace MinuLazer
             this.minimizeButton.FlatAppearance.BorderSize = 0;
             this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.minimizeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimizeButton.Location = new System.Drawing.Point(610, 6);
+            this.minimizeButton.Location = new System.Drawing.Point(618, 6);
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.Size = new System.Drawing.Size(17, 17);
             this.minimizeButton.TabIndex = 18;
@@ -354,7 +354,7 @@ namespace MinuLazer
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(652, 317);
+            this.ClientSize = new System.Drawing.Size(661, 322);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.minimizeButton);

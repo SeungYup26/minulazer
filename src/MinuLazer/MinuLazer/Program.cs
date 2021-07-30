@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace MinuLazer
+namespace MinuLazer.Forms
 {
     static class Program
     {
