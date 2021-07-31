@@ -10,7 +10,6 @@ namespace MinuLazer.Functions
     {
         private Socket tcp;
         private Socket udp;
-        private static bool error = true;
         private static bool connect = false;
 
         public void Shoot(string ip, int port, byte[] packet, int method)
