@@ -126,12 +126,14 @@ namespace MinuLazer.Forms
             this.methodBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.methodBox.FormattingEnabled = true;
             this.methodBox.Items.AddRange(new object[] {
+            "None",
             "UDP",
             "TCP"});
             this.methodBox.Location = new System.Drawing.Point(16, 27);
             this.methodBox.Name = "methodBox";
             this.methodBox.Size = new System.Drawing.Size(594, 21);
             this.methodBox.TabIndex = 4;
+            this.methodBox.Text = "None";
             // 
             // groupBox1
             // 
