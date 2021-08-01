@@ -33,6 +33,7 @@ namespace MinuLazer.Forms
                 " Target: " + ipBox.Text + ":" + portBox.Text
                 + Environment.NewLine + " Thread: " + threadBox.Text
                 + Environment.NewLine + " Packet: " + packetBox.Text
+                + Environment.NewLine + " Method: " + methodBox.Text
                 + Environment.NewLine
                 + Environment.NewLine + " Press [OK] Button to Attack"
                 + Environment.NewLine + " Press [Cancel] Button to Calcel"
@@ -41,6 +42,8 @@ namespace MinuLazer.Forms
 
             if (msg == DialogResult.OK)
             {
+                closeButton.Enabled = false;
+
                 logBox.Text += Environment.NewLine + "[*] Attack Start";
                 stateLogBox.Text = "Shooting to " + ipBox.Text + ":" + portBox.Text;
 
@@ -70,6 +73,8 @@ namespace MinuLazer.Forms
 
         private void stopButton_Click(object sender, EventArgs e)
         {
+            closeButton.Enabled = true;
+
             logBox.Text += Environment.NewLine + "[*] Attack Stop";
             stateLogBox.Text = "Ready";
             threadLogBox.Text = "Thread: 0";
