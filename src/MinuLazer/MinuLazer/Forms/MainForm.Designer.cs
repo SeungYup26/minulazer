@@ -68,6 +68,7 @@ namespace MinuLazer.Forms
             this.ipBox.Cursor = System.Windows.Forms.Cursors.Help;
             this.ipBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.ipBox.Location = new System.Drawing.Point(16, 20);
+            this.ipBox.MaxLength = 15;
             this.ipBox.Name = "ipBox";
             this.ipBox.Size = new System.Drawing.Size(502, 20);
             this.ipBox.TabIndex = 0;
@@ -93,6 +94,7 @@ namespace MinuLazer.Forms
             this.portBox.Cursor = System.Windows.Forms.Cursors.Help;
             this.portBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.portBox.Location = new System.Drawing.Point(539, 20);
+            this.portBox.MaxLength = 5;
             this.portBox.Name = "portBox";
             this.portBox.Size = new System.Drawing.Size(71, 20);
             this.portBox.TabIndex = 1;
@@ -104,6 +106,7 @@ namespace MinuLazer.Forms
             this.threadBox.Cursor = System.Windows.Forms.Cursors.Help;
             this.threadBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.threadBox.Location = new System.Drawing.Point(16, 20);
+            this.threadBox.MaxLength = 4;
             this.threadBox.Name = "threadBox";
             this.threadBox.Size = new System.Drawing.Size(77, 20);
             this.threadBox.TabIndex = 1;
@@ -115,6 +118,7 @@ namespace MinuLazer.Forms
             this.packetBox.Cursor = System.Windows.Forms.Cursors.Help;
             this.packetBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.packetBox.Location = new System.Drawing.Point(114, 20);
+            this.packetBox.MaxLength = 65535;
             this.packetBox.Multiline = true;
             this.packetBox.Name = "packetBox";
             this.packetBox.Size = new System.Drawing.Size(496, 20);

@@ -28,11 +28,17 @@ namespace MinuLazer.Forms
 
         private void attackButton_Click(object sender, EventArgs e)
         {
+            string msg_packet_text = packetBox.Text;
+            if(packetBox.Text.Length > 50)
+            {
+                msg_packet_text = packetBox.Text.Substring(0, 30) + " ...";
+            }
+            
             DialogResult msg = MessageBox.Show
             (
                 " Target: " + ipBox.Text + ":" + portBox.Text
                 + Environment.NewLine + " Thread: " + threadBox.Text
-                + Environment.NewLine + " Packet: " + packetBox.Text
+                + Environment.NewLine + " Packet: " + msg_packet_text
                 + Environment.NewLine + " Method: " + methodBox.Text
                 + Environment.NewLine
                 + Environment.NewLine + " Press [OK] Button to Attack"
