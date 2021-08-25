@@ -17,5 +17,5 @@ git clone https://github.com/seungyup26/minulazer
 > **Run program with Wine or Mono**
 
 # Readme
-1. This program was made for education <br>
+1. This program is for education <br>
 Other: <a href="https://github.com/SeungYup26/minulazer/wiki/Readme">Goto</a>
