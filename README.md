@@ -6,9 +6,6 @@
 **MinuLazer** is Simple C# Dos Attack Tool
 
 # Usage
-> **Windows 7 +** <br>
-> **Visual Studio 2019** <br>
-> **C# Winform .Net Framework 4.7.2** <br>
 ```sh
 git clone https://github.com/seungyup26/minulazer
 ```
@@ -17,5 +14,5 @@ git clone https://github.com/seungyup26/minulazer
 > **Run program with Wine or Mono**
 
 # Readme
-1. This program is for education <br>
+This program is for education <br>
 Other: <a href="https://github.com/SeungYup26/minulazer/wiki/Readme">Goto</a>
